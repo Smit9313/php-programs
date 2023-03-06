@@ -1,0 +1,18 @@
+<script>
+  function keydown() {
+    var uname = document.getElementById("name").value;
+    var http = new XMLHttpRequest();
+    http.open("GET", "2.php?name=" + uname, true);
+    http.onreadystatechange = function () {
+      if (http.readyState == 4 && http.status == 200) {
+        document.getElementById("show-name").innerHTML = http.responseText;
+      }
+    };
+    http.send();
+  }
+</script>
+
+<label>Enter name :</label>
+<input type="text" id="name" name="name" onkeydown="keydown()" />
+
+<div id="show-name"></div>

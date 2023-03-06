@@ -1,0 +1,21 @@
+
+<script>
+    function showName(){
+        var name = document.getElementById("name").value;
+        var obj = new XMLHttpRequest();
+        obj.open("GET","3.php?name="+name,true);
+        obj.onreadystatechange = function(){
+            if(obj.readyState == 4 && obj.status == 200){
+                document.getElementById("display-name").innerHTML = obj.responseText;
+            }
+        }
+        obj.send();
+    }
+
+</script>
+
+<label>
+    Enter Name:
+</label>
+<input type="text" id="name" name="name" onkeyup="showName()">
+<div id="display-name"></div>

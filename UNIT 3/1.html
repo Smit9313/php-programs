@@ -1,0 +1,20 @@
+<script>
+  function getName(){
+    var uname = document.getElementById("name").value;
+    let xttp = new XMLHttpRequest();
+    xttp.open("GET", "1.php?name=" + uname, true);
+    xttp.onreadystatechange = function () {
+      if (xttp.readyState == 4 && xttp.status == 200) {
+        document.getElementById("d1").innerHTML = xttp.responseText;
+      }
+    };
+   
+    xttp.send();
+  }
+</script>
+
+<form>
+  <label>Enter name:</label>
+  <input type="text" id="name" name="name" onkeyup="getName()" />
+</form>
+<div id="d1"></div>

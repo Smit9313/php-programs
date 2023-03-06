@@ -1,0 +1,17 @@
+<script>
+        function loadDoc(){
+            var x=new XMLHttpRequest();
+            x.onreadystatechange=function(){
+                if(this.readyState==4&&this.status==200){
+                    document.getElementById("demo").innerHTML=this.responseText;
+                }
+            };
+            x.open("GET","Ajax.txt",true);
+            x.send();
+        }
+</script>
+
+<div id="demo">
+    <button type="button" onclick="loadDoc()">Fetch File Content</button>
+</div>
+    
