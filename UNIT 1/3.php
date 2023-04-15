@@ -10,6 +10,7 @@ if ($x > 5) {
 } else {
     echo "x is less than or equal to 5<br/>";
 }
+// x is greater than 5
 
 
 switch($x){
@@ -22,4 +23,6 @@ switch($x){
     default:
         echo "something wrong.";
     }
+// something wrong.
+
 ?>

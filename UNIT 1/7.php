@@ -12,6 +12,7 @@ function stringConcat(){
 
 $result = stringConcat();
 echo $result . "<br/>";
+// Hello World
 
 function stringConcatParam($str1, $str2){
     $concat = $str1 . " " . $str2;
@@ -20,7 +21,7 @@ function stringConcatParam($str1, $str2){
 
 $result1 = stringConcatParam("Hello", "World");
 echo $result1;
+// Hello World
 
-$result3 = stringConcat();
 
 ?>

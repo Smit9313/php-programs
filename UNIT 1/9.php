@@ -10,6 +10,17 @@ sort($arr);
 foreach($arr as $val){
     echo $val . "<br/>";
 }
+/*
+Sort in ascending order
+1
+2
+2
+4
+5
+6
+7
+8
+*/
 
 echo "<br/>";
 
@@ -18,6 +29,17 @@ rsort($arr);
 foreach($arr as $val){
     echo $val . "<br/>";
 }
+/*
+Sort in decending order
+8
+7
+6
+5
+4
+2
+2
+1
+*/
 
 
 ?>

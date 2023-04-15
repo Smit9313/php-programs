@@ -16,5 +16,6 @@ foreach ($arr as $value) {
 }
 
 echo "The value $val is appear $count times in the array.";
+// The value 5 is appear 3 times in the array.
 
 ?>

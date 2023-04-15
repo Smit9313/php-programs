@@ -17,6 +17,21 @@ foreach($students as $index=>$value){
     }
     echo "<br/>";
 }
+/* 
+Using foreach:
+
+Student:1:
+name=>smit
+roll_no=>28
+
+Student:2:
+name=>jay
+roll_no=>30
+
+Student:3:
+name=>sahil
+roll_no=>100
+*/
 
 echo "using for loop:<br/><br/>";
 $key1 = array_keys($students);
@@ -29,5 +44,21 @@ for($i = 0; $i < count($key1);$i++){
     }
     echo "<br/>";
 }
+
+/* 
+using for loop:
+
+student:1
+name=>smit
+roll_no=>28
+
+student:2
+name=>jay
+roll_no=>30
+
+student:3
+name=>sahil
+roll_no=>100
+*/
 
 ?>

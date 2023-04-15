@@ -1,0 +1,12 @@
+specific differences between GET and POST:
+
+Data size: GET method has a limitation on the amount of data that can be sent, 
+            which is typically around 2000 characters. POST method does not have
+            any size limitations.
+Security: POST method is considered more secure than GET method because the data 
+            is not visible in the URL. However, POST method does not provide absolute 
+            security and can still be subject to attacks such as cross-site scripting 
+            (XSS) or SQL injection.
+Caching: GET method can be cached, meaning that the same request can be made multiple 
+            times without actually sending a new request to the server. POST method 
+            cannot be cached, so each request will send the data to the server.
