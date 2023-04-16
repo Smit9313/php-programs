@@ -1,4 +1,4 @@
-<?php
+	<?php
 $conn=mysqli_connect("localhost","root","","DB_1");
 $id=$_GET['sid'];
 $name=$_GET['sname'];

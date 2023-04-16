@@ -11,6 +11,6 @@ if(isset($_GET["hobby"])){
     echo $hobby;
 }
 
-echo "<h1>" . isset($_GET["hobby"]) . "</h1>";
+// echo "<h1>" . isset($_GET["hobby"]) . "</h1>";
 
 ?>

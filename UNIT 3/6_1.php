@@ -1,6 +1,3 @@
-
-
-
 <?php 
 
 $name = $_GET["str"];

@@ -1,4 +1,3 @@
-
 <script>
     function call(){
         var x = document.getElementById("str").value;

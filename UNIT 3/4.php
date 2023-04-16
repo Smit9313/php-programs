@@ -20,9 +20,9 @@
 
 <?php
 
-// $conn = mysqli_connect("localhost", "root", "", "DB_1");
-// $sql = "select * from product";
-// $res = mysqli_query($conn, $sql);
+$conn = mysqli_connect("localhost", "root", "", "DB_1");
+$sql = "select * from product";
+$res = mysqli_query($conn, $sql);
 
 ?>
 
@@ -31,16 +31,16 @@
     Select product name:
     <select id="pro" onchange="idChange()">
         <?php
-        // while ($row = mysqli_fetch_assoc($res)) 
-        // {
+        while ($row = mysqli_fetch_assoc($res)) 
+        {
             ?>
 
-            <!-- <option value="<?php echo $row["Prod_id"]?>"><?php echo $row["Pro_name"]?></option> -->
+            <option value="<?php echo $row["Prod_id"]?>"><?php echo $row["Pro_name"]?></option>
 
         <?php 
-        // }
+        }
         ?>
-
+<!-- 
         <option value="1">
             1
         </option>
@@ -49,7 +49,7 @@
         </option>
         <option value="3">
             3
-        </option>
+        </option> -->
 
 
     </select>
