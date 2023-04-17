@@ -19,7 +19,7 @@
 </script>
 
 <form>
-    ID:<input type="text" id="sid" onkeyup="call()"><br>
+    ID:<input type="number" id="sid" onkeyup="call()"><br>
     Name:<input type="text" id="sname"><br>
     Mobile No:<input type="text" id="mob"><br>
     Country:<input type="text" id="con"><br>

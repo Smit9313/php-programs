@@ -3,12 +3,12 @@ assigned using for loop and foreach statement. -->
 
 <?php 
 
-$arr1 = array("Math","Science","English","History","Geography");
+$sub = array("Math","Science","English","History","Geography");
 
 // using for loop
 echo "Using for loop: <br/>";
-for($i = 0;$i < count($arr1);$i++){
-    echo $arr1[$i]." <br/>";
+for($i = 0;$i < count($sub);$i++){
+    echo $sub[$i]." <br/>";
 }
 /*
 Using for loop:
@@ -23,7 +23,7 @@ echo "<br/>";
 
 // using foreach
 echo "Using foreach: <br/>";
-foreach($arr1 as $val){
+foreach($sub as $val){
     echo $val . "<br/>";
 }
 /*

@@ -14,12 +14,15 @@ echo "Hello"," ","World ", 34, "<br/>";
 // Hello World 34
 
 // Use of print
-print("Hello World<br/>");
+PRINT("Hello World<br/>");
 // Hello World
 
 // return 1
-echo print("");
+echo PRINT("");
 // 1
+
+eCHo("hello")." World";
+// hello World
 
 
 /* 1. echo is a language construct while print is a function.

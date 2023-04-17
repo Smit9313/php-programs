@@ -10,7 +10,7 @@ $students = array(
 
 
 echo "Using foreach:<br/><br/>";
-foreach($students as $index=>$value){
+FOREACH($students as $index=>$value){
     echo "Student:" . $index + 1 . ":<br/>";
     foreach($value as $key=>$val){
         echo $key . "=>" . $val . "<br/>";
